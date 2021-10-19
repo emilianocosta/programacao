@@ -1,2 +1,2 @@
 # programacao
-Programas criados durante a aula de programação aplicada no curso de automação industrial da Fatec SBC
+Programas criados durante as aulas de Programação Aplicada a Automação no curso de Automação Industrial da Fatec SBC

@@ -1,21 +1,19 @@
-#--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 #Emiliano Costa Junior - RA:1260901923008
 #FATEC - Automação Industrial
-#Programa 03 - Programação Aplicada a Automação
+#Programa 06 - Programação Aplicada a Automação
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 #Descrição:
-#Calcula a area de um triangulo
+#Converte Dolar em Reais
+#Entrar via teclado com o valor da cotação do dólar e uma certa quantidade de dólares. 
+#Calcular e exibir o valor correspondente em Reais (R$).
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 
-print("A partir dos valores da base e altura de um triângulo, calcular e exibir sua área.")
-
 #entrada dados
-base = float(input("Digite a base : "))
-altura = float(input("Digite a altura : "))
-
+dolar = float(input("Digite valor em dolares: $"))
+cotaçao = float(input("Digite a cotação: R$"))
 #calcula
-area = (base * altura) /2 
+real = dolar * cotaçao  
 
 #mostra resultado
-print(f"O triangulo tem area = {area: .2f} ")
+print(f"${dolar: .2f}, equivalem a R${real: .2f}")
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|

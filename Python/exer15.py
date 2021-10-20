@@ -2,26 +2,35 @@
 #Emiliano Costa Junior - RA:1260901923008
 #FATEC - Automação Industrial
 #Programação Aplicada a Automação
-#Programa 05 - Converte temperatura
+#Programa 15 - Calcula IMC 
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
-#Descrição:
-#Entrar via teclado com o valor de uma temperatura em graus Celsius, 
-#calcular e exibir sua temperatura equivalente em Fahrenheit.
+#Descrição: 
+#Entrar com o peso e a altura de uma determinada pessoa. Após a digitação, 
+# exibir se esta pessoa está ou não com seu peso ideal. Fórmula: peso/altura².
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 
-#Mensagem de Apresentação
-print("Converte temperatura em graus Celsius, para sua equivalente Fahrenheit")
+#Apresentação
+print("Calcula o IMC de uma pessoa")
 
-#Entrada dados
-Celsius = float(input("Digite a temperatura em Celsius: "))
+#entrada dados
+peso = float(input("Digite o peso: "))
+altura = float(input("Digite o altura: "))
 
-#Calcula
-Fahrenheit = Celsius * 1.8 + 32  
+#calcula
+IMC = peso / altura**2
 
 #Mostra resultado
-print(f"{Celsius: .2f} graus Celsius, equivalem a{Fahrenheit: .2f} Fahrenheit")
+if(IMC < 20):
+    print("Pessoa esta abaixo do peso")
+else:
+    if(IMC < 25):
+        print("Pessoa tem peso normal")
+    else:
+        if(IMC < 30):
+            print("Pessoa esta acima do peso")
+        else:
+            print("Pessoa esta Obesa")
 
 #Aguarda o usuario finalizar
 fim = input("clique qualquer tecla para finalizar!")
-
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|

@@ -2,26 +2,31 @@
 #Emiliano Costa Junior - RA:1260901923008
 #FATEC - Automação Industrial
 #Programação Aplicada a Automação
-#Programa 05 - Converte temperatura
+#Programa 14 - Seleciona o maior valor digitado 
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
-#Descrição:
-#Entrar via teclado com o valor de uma temperatura em graus Celsius, 
-#calcular e exibir sua temperatura equivalente em Fahrenheit.
+#Descrição: 
+#Entrar via teclado com três valores distintos. Exibir o maior deles.
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 
 #Mensagem de Apresentação
-print("Converte temperatura em graus Celsius, para sua equivalente Fahrenheit")
+print("Seleciona o maior valor digitado")
 
 #Entrada dados
-Celsius = float(input("Digite a temperatura em Celsius: "))
+valor1 = float(input("Digite o valor1: "))
+valor2 = float(input("Digite o valor2: "))
+valor3 = float(input("Digite o valor3: "))
 
-#Calcula
-Fahrenheit = Celsius * 1.8 + 32  
+#escolhe o maior
+if(valor1 > valor2):
+    maior = valor1
+else:
+    maior = valor2
 
-#Mostra resultado
-print(f"{Celsius: .2f} graus Celsius, equivalem a{Fahrenheit: .2f} Fahrenheit")
-
+if(maior > valor3):
+    print(f"Maior: {maior: .2f}")
+else:
+    print(f"Maior: {valor3: .2f}")
+    
 #Aguarda o usuario finalizar
 fim = input("clique qualquer tecla para finalizar!")
-
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|

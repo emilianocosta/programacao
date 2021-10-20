@@ -1,13 +1,15 @@
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 #Emiliano Costa Junior - RA:1260901923008
 #FATEC - Automação Industrial
-#Programa 04 - Programação Aplicada a Automação
+#Programação Aplicada a Automação
+#Programa 04 - Calcula a média aritmética de quatro valores quaisquer.
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 #Descrição:
 #Calcula e exibi a média aritmética de quatro valores quaisquer que serão digitados.
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 
-print("Calcular e exibir a média aritmética de quatro valores quaisquer que serão digitados.")
+#Mensagem de apresentação
+print("Calcula a média aritmética de quatro valores quaisquer.")
 
 #entrada dados
 valor1 = float(input("Digite o primeiro valor : "))
@@ -20,4 +22,8 @@ media = (valor1 + valor2 + valor3 + valor4) /4
 
 #mostra resultado
 print(f"A media aritmética dos quatro valores é = {media: .2f} ")
+
+#Aguarda o usuario finalizar
+fim = input("clique qualquer tecla para finalizar!")
+
 #--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
